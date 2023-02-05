@@ -32,6 +32,8 @@
 \documentclass[10pt,A4]{article}	
 
 
+
+
 %----------------------------------------------------------------------------------------
 %	ENCODING
 %----------------------------------------------------------------------------------------
@@ -140,7 +142,7 @@
 \usepackage{color}
 
 %accent color
-\definecolor{sectcol}{RGB}{0,150,255}
+\definecolor{sectcol}{RGB}{0,96,163}
 
 %dark background color
 \definecolor{bgcol}{RGB}{110,110,110}
@@ -312,7 +314,7 @@
 \vspace{-8pt}
 \begin{center}
 	\HUGE \textsc{Asif Al Noor} \\[2pt]
-	\small RF System Specialist
+	\small RF Systems Design, System Design (Hardware), ASIC design, PCB Design
 \end{center}
 
 
@@ -323,38 +325,39 @@
 %---------------------------------------------------------------------------------------
 %	META SECTION
 %----------------------------------------------------------------------------------------
+\vspace{-10pt}
 \metasection{Toronto, Canada (Canadian Citizen)}{roonlafisa@gmail.com | +1-905-783-3906 | https://roonlafisa.github.io}
-\vspace{-2pt}
+\vspace{-6pt}
 \textcolor{softcol}{\hrule}
-\vspace{6pt}
+
 
 \normalsize
 
 %---------------------------------------------------------------------------------------
-%	SUMMARAY (optional)
+%	SUMMARY (optional)
 %----------------------------------------------------------------------------------------
-\vspace{-6pt}
-\cvsection{Summary}
-I have been working in the space Industry for over five years with a thirst to learn new things every day. I have 8 years of RF system design experience for IoT, Cubesats, and Rocket. More recently, I have led the design and development of a full-stack (design to assembly) avionics system for an orbital-scale rocket. \\
 
-\vspace{-6pt}
+\cvsection{Summary}
+\vspace{-5pt}
+I have been working in the space Industry for over 5 years with a thirst to learn new things every day. I have 8 years of RF system design experience for IoT, cubesats, and rockets. More recently, I have had the chance to pick up System Engineering experience when I led the design and development of a full-stack (design to assembly) avionics system for an orbital-scale rocket. 
+\vspace{-2pt}
 \cvsection{Skills}
+\vspace{-15pt}
 \begin{multicols}{2}
-\textbf{System design}: End-to-end RF component and subsystem, Avionics hardware component and subsystem, PCB design, JIRA. \\
-\textbf{RF design}: RF system, Link budgets, Ground station, Antenna design, Filter design. \\
-\textbf{RF hardware}: RFD900x, Iridium, Globalstar, Quasonix, Safran, CCSDS Receivers, Ublox GPS, JAVAD GPS, LimeSDR, Transponder. \\
-\textbf{RF software}: CST, HFSS, ADS, MATLAB tools, Custom scripts/simulation. 
+\textbf{System design}: End-to-end RF subsystem, Full-stack hardware subsystem, PCB design, JIRA. \\
+\textbf{RF design}: RF simulations, RF system architecture, Link budgets, Ground station, Antenna design, Filter design. \\
+\textbf{RF hardware}: RFD900x, Iridium, Globalstar, Quasonix, Safran, CCSDS Receivers, Ublox GPS, JAVAD GPS, LimeSDR, uAvionics Transponder. \\
+\textbf{RF software}: CST, HFSS, ADS, COMSOL, MATLAB tools.
 
 \columnbreak
 
-\textbf{Standards}: IPC-620D (Workmanship), AS50881G (Wiring), MIL-810 (Environmental test). \\
-\textbf{Electronics}: ESP32, STM32, IMU, i2C, CAN, RS-232, Jetson TX2i. \\
-\textbf{Programming}: Python, C, MATLAB, Linux. \\
-\textbf{PCB}: LT Spice, CircuitStudio, Altium, Circuit Studio, KiCAD. \\
-\textbf{CAD}: Solidworks, Solidworks electrical. \\
+\textbf{Standards}: IPC-610 (PCB), IPC-620 (Workmanship), AS50881G (Wiring), MIL-810 (Environmental test). \\
+\textbf{Electronics}: ASIC w/ESP32, STM32, i2C, CAN, RS-232. \\
+\textbf{Programming}: Python, C, MATLAB, Cube IDE, Linux. \\
+\textbf{PCB design}: LT Spice, Altium, Circuit Studio, KiCAD. \\
+\textbf{CAD prototyping}: Solidworks, Solidworks electrical. \\
 \textbf{Lab}: Oscilloscope, Signal generator, Electrical load, Network Analyzer, Logic analyzer, SMD soldering. 
 \end{multicols}
-\vspace{6pt}
 
 %============================================================================%
 %
@@ -365,14 +368,16 @@ I have been working in the space Industry for over five years with a thirst to l
 %---------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
-\cvsection{Professional History}
 
-\cvevent{Sept 2021 - Present}{Senior RF Specialist}{SpaceRyde, Toronto ON}{
-	{Designed and implemented manufacturing of the \textbf{rocket avionics system} including flight computers, GNC, power management, data networking, RF communications on subsystem and component levels.},
-	{Architected and verified the \textbf{end-to-end RF system} to receive rocket telemetry using legacy COTS design.},
+\cvsection{Professional History}
+\vspace{-5pt}
+\cvevent{Sept 2021 - Present}{Senior RF Specialist}{\textbf{SpaceRyde}, Toronto ON}{
+	{Designed and implemented manufacturing of a \textbf{rocket avionics system} including flight computers, GNC, power management, data networking, RF communications on subsystem and component levels.},
+   % {Designed, built and commissioned the \textbf{attitude control system} of a rocket launch platform from stratospheric balloon including its through motor, ESC, propellers.},
+	{Architected and commissioned the \textbf{end-to-end RF system} to receive rocket telemetry using legacy COTS design. Scope  of responsibilities also included the \textbf{ground station} implementation and operation.},
 %	{Developed \textbf{RF link budgeting} a dynamic software from scratch and verified it with real-time test data.},
 	{Interfaced with regulatory authority (ISED) regarding \textbf{radio licensing} for rocket telemetry spectrum licensing.},
-        {Designed, created, assembled, and tested \textbf{4-layer PCBs} which incorporates embedded MCU, ADC, Radio interfacing, and power management system.},
+    {Designed, assembled and tested \textbf{PCBs} incorporating MCU, serial devices, and other critical components.},
 	{CAD-modeled and assembled avionics flight components, wires, and connectors inside flight enclosures.},
 	{Spearheaded the development of \textbf{test procedures and campaigns} for the validation of avionics components.},
 	{Produced \textbf{systems requirements} and derived requirements for developing avionics components.}
@@ -380,31 +385,29 @@ I have been working in the space Industry for over five years with a thirst to l
 }
 
 %
-\cvevent{April 2020 - Aug 2021}{Intermediate RF Engineer}{SMT Research, Vancouver BC}{
+\cvevent{April 2020 - Aug 2021}{Intermediate RF Engineer}{\textbf{SMT Research}, Vancouver BC}{
 	{Designed and implemented a battery-less \textbf{RF power harvesting} wireless system for structural monitoring.},
 	{Pioneered custom \textbf{RFID passive sensor} tags for remote data logging and pinpointing hidden sensor locations.},
 	{Installed sensors and DAQs in active construction sites and provided technical support to installation technicians.}
 }
 
 %
-\cvevent{ July 2017 - May 2019}{RF Engineering Consultant}{Direct Kinetic Solutions, Texas (Remote)}{
+\cvevent{ July 2017 - May 2019}{RF Engineering Consultant}{\textbf{Direct Kinetic Solutions}, Texas (Remote)}{
 	{Produced custom \textbf{Cubesat EPS and RF system} concepts for clients and DOD grant applications.}
 }
 
 
 %
-\cvevent{ July 2017 - May 2019}{Lead RF Engineer}{Helios Wire, Vancouver BC}{
-	{Custom designed and successfully deployed \textbf{C-, X- and S-Band antennas} for CubeSat TT\&C communication.},
+\cvevent{ July 2017 - May 2019}{Lead RF Engineer}{\textbf{Helios Wire}, Vancouver BC}{
+	{Designed, simulated and successfully deployed \textbf{C, X and S-Band antennas} for CubeSat TT\&C communication.},
 	{Conceptualized and modeled an iot gateway to interface between Cubesat in space and IoT tags in the ground.}
 }
-
-
-
 %---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %--------------------------------------------------------------------------------------
+\vspace{-20pt}
 \cvsection{Educational History}
-
+\vspace{-5pt}
 \cvevent{Sept 2014 - Oct 2016}{MASc in EE}{University of British Columbia, Kelowna BC}{
 	{Master Thesis: ''A broadband fixed-beam leaky-wave antenna based on transformation electromagnetics.''}
 }
@@ -413,13 +416,20 @@ I have been working in the space Industry for over five years with a thirst to l
 \cvevent{ Jan 2010 - Oct 2013}{BSc in EEE}{Islamic University of Technology}{
 	{Activities: Led the university robotics team during the NASA Lunabotics Annual Competition 2013.}
 }
+%---------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%--------------------------------------------------------------------------------------
+\vspace{-20pt}
+\cvsection{Ongoing Personal Projects}
+\vspace{-15pt}
+\begin{multicols}{2}
+\textbf{Embedded Hardware and Firmware}: Developing a development kit using STM32F407 with modular shields. \\
 
-%--------------------------------------------------------------------------------------------------
-%	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
-%--------------------------------------------------------------------------------------------------
+\columnbreak
 
-\null
-
+\textbf{Computer vision}: Implementing a gesture detection-based game on Tx2i Jetson Nano for my toddler. \\
+ 
+\end{multicols}
 
 
 %============================================================================%
